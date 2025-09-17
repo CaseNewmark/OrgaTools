@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <UserSecretsId>1cb32125-f468-42cf-9616-1d9e904b97cb</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Whiteboard\Whiteboard.csproj" />
+    <ProjectReference Include="..\Aspire\ServiceDefaults\ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Web" />
+    <PackageReference Include="Riok.Mapperly" />
+    <PackageReference Include="Aspire.Npgsql" />
+    <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Server" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+    <PackageReference Include="Scalar.AspNetCore" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OpenApiDocumentsDirectory>../OpenApi</OpenApiDocumentsDirectory>
+    <OpenApiGenerateDocumentsOptions>--file-name orgatools-api</OpenApiGenerateDocumentsOptions>
+  </PropertyGroup>
+
+</Project>
