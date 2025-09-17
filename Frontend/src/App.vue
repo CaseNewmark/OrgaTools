@@ -19,6 +19,11 @@ const navigationMenuItems = ref([
     label: 'Overview',
     icon: 'pi pi-home',
     route: '/'
+  },
+  {
+    label: 'Whiteboard',
+    icon: 'pi pi-pen-to-square',
+    route: '/whiteboard'
   }
 ]);
 
