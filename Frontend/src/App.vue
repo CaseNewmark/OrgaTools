@@ -46,7 +46,7 @@ const toggleAccountMenu = (event: PointerEvent) => {
 
 <template>
   <div class="flex flex-col items-center self-center min-h-screen w-200 items-stretch" v-if="state.isAuthenticated">
-    <div class="flex flex-row gap-4 mt-8 mb-8">
+    <div class="flex flex-row gap-4 mt-8 mb-8 z-200">
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="48" height="48" />
       <Menubar :model="navigationMenuItems" class="w-full max-w-4xl">
         <template #item="{ item }">
