@@ -21,10 +21,15 @@ const navigationMenuItems = ref([
     route: '/'
   },
   {
+    label: 'Factory Game',
+    icon: 'pi pi-gauge',
+    route: '/factorygame'
+  },
+  {
     label: 'Whiteboard',
     icon: 'pi pi-pen-to-square',
     route: '/whiteboard'
-  }
+  },
 ]);
 
 onMounted(async () => {

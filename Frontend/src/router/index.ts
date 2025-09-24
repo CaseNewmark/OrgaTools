@@ -18,6 +18,11 @@ const router = createRouter({
     //   component: () => import('../views/TestView.vue'),
     // },
     {
+      path: '/factorygame',
+      name: 'factorygame',
+      component: () => import('../views/FactoryGame.vue'),
+    },
+    {
       path: '/whiteboard',
       name: 'whiteboard',
       component: () => import('../views/WhiteboardView.vue'),
